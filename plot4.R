@@ -10,7 +10,7 @@ with(data, plot(time_feature, as.numeric(Voltage), main=NULL, type = 'l', xlab='
 with(data, plot(time_feature, Sub_metering_1, main=NULL, type = 'l', col='black', xlab='', ylab='Energy sub metering'))
 with(data, points(time_feature, Sub_metering_2, main=NULL, type = 'l', col='red'))
 with(data, points(time_feature, Sub_metering_3, main=NULL, type = 'l', col='blue'))
-legend('topright', col=c('black', 'red', 'blue'), lty=1, legend=c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'))
+legend('topright', col=c('black', 'red', 'blue'), lty=1, bty = "n", legend=c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'))
 
 with(data, plot(time_feature, Global_reactive_power, main=NULL, type = 'l', xlab='', ylab='Global_reactive_power'))
 dev.off()
